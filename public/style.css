@@ -1,47 +1,49 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Fundo da página */
+/* Fundo */
 body {
-  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  background: linear-gradient(135deg, #0a192f, #112240);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-/* Container do formulário */
+/* Container */
 .form-container {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  width: 400px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: #0f172a;
+  padding: 35px;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid #1e3a8a;
 }
 
 /* Título */
 .form-container h2 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #1976d2;
+  margin-bottom: 25px;
+  color: #3b82f6;
+  font-weight: 600;
 }
 
-/* Grupos de campos */
+/* Grupo */
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
-/* Labels */
+/* Label */
 .form-group label {
   display: block;
-  margin-bottom: 5px;
-  color: #333;
-  font-weight: bold;
+  margin-bottom: 6px;
+  color: #cbd5f5;
+  font-size: 14px;
 }
 
 /* Inputs */
@@ -49,40 +51,50 @@ body {
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 11px;
   border-radius: 6px;
-  transition: 0.3s;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #e2e8f0;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
-/* Efeito ao focar */
+/* Focus */
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #1976d2;
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
   outline: none;
-  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+/* Placeholder */
+::placeholder {
+  color: #64748b;
 }
 
 /* Botão */
 .btn-submit {
   width: 100%;
-  padding: 12px;
-  background: #1976d2;
-  color: white;
+  padding: 13px;
+  background: linear-gradient(90deg, #2563eb, #1e3a8a);
+  color: #fff;
   border: none;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
 
 /* Hover botão */
 .btn-submit:hover {
-  background: #0d47a1;
+  background: linear-gradient(90deg, #1e40af, #1e3a8a);
+  transform: scale(1.02);
 }
 
-/* Responsividade */
+/* Responsivo */
 @media (max-width: 500px) {
   .form-container {
     width: 90%;
