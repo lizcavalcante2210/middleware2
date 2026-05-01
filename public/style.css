@@ -1,14 +1,90 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo da página */
 body {
-    font-family: Arial;
-    padding: 20px; 
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-input{
-    display: block;
-    margin: 10px 0 ;
-    padding: 8px;
+
+/* Container do formulário */
+.form-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-background color: red ;
-padding: 20px;
-margin : 10 px;
 
+/* Título */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1976d2;
+}
 
+/* Grupos de campos */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Efeito ao focar */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+/* Botão */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover botão */
+.btn-submit:hover {
+  background: #0d47a1;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
+  }
+}
